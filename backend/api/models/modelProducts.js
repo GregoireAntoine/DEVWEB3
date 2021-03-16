@@ -17,6 +17,10 @@ Products.init({
         type: DataTypes.INTEGER,
         allowNull: false
     },
+    photo:{
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
     status:{
         type: DataTypes.TEXT,
         allowNull: false

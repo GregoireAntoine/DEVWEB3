@@ -7,3 +7,17 @@ exports.getAll = function(req, res) {
         .then(results => res.json(results[0]))
         .catch(error => res.status(400).json(error));
 };
+
+exports.postUpload = function(req, res) {
+    Products.findOrCreate({
+        where: {id: 0},
+        defaults: {
+            name: req.body.name,
+            price: req.body.price,
+            photo: req.body.photo,
+            status: req.body.status
+        }
+    })
+        .then(results => res.json(results))
+        .catch(error => res.status(400).json(error));
+};
