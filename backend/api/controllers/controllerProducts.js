@@ -9,14 +9,11 @@ exports.getAll = function(req, res) {
 };
 
 exports.postUpload = function(req, res) {
-    Products.findOrCreate({
-        where: {id: 0},
-        defaults: {
+    Products.create({
             name: req.body.name,
             price: req.body.price,
             photo: req.body.photo,
-            status: req.body.status
-        }
+            status: req.body.status,
     })
         .then(results => res.json(results))
         .catch(error => res.status(400).json(error));
