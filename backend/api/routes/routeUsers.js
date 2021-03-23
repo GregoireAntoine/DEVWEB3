@@ -11,7 +11,7 @@ router.get('/notConnected', ctrUsers.notConnected);
 router.get('/logout',isLoggedIn, ctrUsers.logout);
 router.post('/signup', passport.authenticate('local-signup', {
     successRedirect: '/users/successCreation',
-    failureRedirect: '/users/takenEmail'
+    failureRedirect: '/users/takenPhone'
 }));
 router.post('/signin', passport.authenticate('local-signin', {
     successRedirect: '/users/successConnection',

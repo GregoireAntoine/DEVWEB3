@@ -26,7 +26,7 @@ exports.takenPhone = function(req, res){
 };
 
 exports.errorConnection = function(req, res){
-    res.status(400).json('email/password incorrect');
+    res.status(400).json('phone/password incorrect');
 };
 
 exports.notConnected = function(req, res){
