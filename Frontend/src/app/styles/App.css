@@ -30,7 +30,7 @@ body {
   }
   
   .bg-light.orange {
-    background: #ffc107!important;
+    background: #7cb15a!important;
   }
   
   /* cart */
@@ -168,7 +168,7 @@ body {
     color: rgb(152, 151, 151);
   }
   .crimson {
-    color: crimson!important;
+    color: rgb(255, 255, 255)!important;
   }
   .bg-crimson {
     background-color: crimson!important;
