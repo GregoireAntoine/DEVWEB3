@@ -132,15 +132,9 @@ export const CartPage = () => {
                 </ul>
               </li>
             </ul>
-            <button
-              type="button"
-              className="btn btn-light btn-lg btn-block checkout bg-crimson"
-              disabled="true"
-            >
-              <a href="#" className="white">
+              <Link to="checkout" className={`white btn btn-light btn-lg btn-block checkout ${!items.length && 'disabled'} bg-crimson`}>
                 Checkout
-              </a>
-            </button>
+              </Link>
           </div>
         </div>
         </div>

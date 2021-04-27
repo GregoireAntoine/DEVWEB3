@@ -8,6 +8,7 @@ const initialState = {
     items : JSON.parse(localStorage.getItem("items")) !== null ? JSON.parse(localStorage.getItem("items")) : []
 }
 
+///////////////////////////////////Gestionnaire d'etat///////////////////////////////////////////////////////////
 export default function onlineStoreApp(state = initialState, action) {
     switch(action.type) {
         case actions.ADD_TO_CART : return Object.assign({}, state, { items : [...state.items, action.payload]});
@@ -31,7 +32,11 @@ export default function onlineStoreApp(state = initialState, action) {
         case actions.SAVE_CART: 
         saveToLocalStorage(action.payload.items)
         return state
+        case actions.RESET_CART:
+        saveToLocalStorage([])
+        return Object.assign({}, state,  {
+            items : []
+        })
         default: return state
     }
-    
-}
+}   

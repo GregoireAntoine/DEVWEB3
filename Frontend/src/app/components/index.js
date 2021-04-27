@@ -7,7 +7,11 @@ export const Navbar = ({ filter, setFiltering  }) => {
   const items = useSelector(state => state.items)
   return (
     <nav className="navbar orange navbar-expand-lg navbar-light bg-light fixed-top">
+
         <Link  className="navbar-brand crimson" to="/">   <i class="fas fa-shopping-cart"></i>     Boulangerie Patisserie François</Link>
+
+       // <Link  className="navbar-brand crimson" to="/">   <i class="fas fa-shopping-cart"></i> Boulangerie en ligne</Link>
+
       <button
         className="navbar-toggler"
         type="button"
