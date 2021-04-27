@@ -1,245 +1,197 @@
 const fruits = [
     {
-      ref: "fruits_1",
+      ref: "Pain_1",
       category: 0,
-      name: "Citrons",
-      price: 0.99,
+      name: "Baguette traditions",
+      price: 1.35,
       unit: "pièce",
-      image: "citron.png"
+      image: "baguette tradition.jpg"
     },
     {
-      ref: "fruits_2",
+      ref: "baguette",
       category: 0,
-      name: "Citrons Vert",
-      price: 1.99,
+      name: "Baguette",
+      price: 1.05,
       unit: "pièce",
-      image: "lime.png"
+      image: "baguette.jpg"
     },
     {
-      ref: "fruits_3",
+      ref: "Pain de campagne ",
       category: 0,
-      name: "Fraises",
-      price: 2.99,
-      unit: "kg",
-      image: "fraise.png"
+      name: "Pain de campagne",
+      price: 1.35,
+      unit: "pièce",
+      image: "Pain de campagne.jpg"
     },
     {
-      ref: "fruits_4",
+      ref: "Pain tradition",
       category: 0,
-      name: "Noix de coco",
+      name: "Pain tradtion",
       price: 3.99,
       unit: "pièce",
-      image: "coconut.png"
+      image: "pain tradition.jpg"
     },
     {
-      ref: "fruits_5",
+      ref: "Pain gris",
       category: 0,
-      name: "Clémentine",
-      price: 3.99,
-      unit: "kg",
-      image: "clementine.png"
+      name: "Pain Gris",
+      price: 1.25,
+      unit: "pièce",
+      image: "paingris.jpg"
     },
     {
-      ref: "fruits_6",
+      ref: "pain blanc",
       category: 0,
-      name: "Figues",
-      price: 5.99,
-      unit: "kg",
-      image: "figues.png"
-    },
-    ,
-    {
-      ref: "fruits_7",
-      category: 0,
-      name: "Raisins",
-      price: 4.59,
-      unit: "kg",
-      image: "grapes.png"
-    },
-    {
-      ref: "fruits_8",
-      category: 0,
-      name: "Kiwi",
-      price: 4.99,
-      unit: "kg",
-      image: "kiwi.png"
-    },
-    {
-      ref: "fruits_9",
-      category: 0,
-      name: "Poires",
-      price: 3.49,
-      unit: "kg",
-      image: "poires.png"
+      name: "Pain blanc",
+      price: 1.00,
+      unit: "pièce",
+      image: "painblanc.jpg"
     }
+    
   ];  
   
   const legumes = [
     {
-      ref: "legumes_1",
+      ref: "brioche",
       category: 1,
-      name: "Oignons",
-      price: 0.99,
-      unit: "kg",
-      image: "oignons.png"
+      name: "Brioche au chocolat",
+      price: 0.85,
+      unit: "pièce",
+      image: "brioche.png"
     },
     {
-      ref: "legumes_2",
+      ref: "couque au choco",
       category: 1,
-      name: "Poivrons",
-      price: 2.99,
-      unit: "kg",
-      image: "poivrons.png"
+      name: "Couque au chocolat",
+      price: 0.90,
+      unit: "pièce",
+      image: "couque au choco.png"
     },
     {
-      ref: "legumes_3",
+      ref: "couque au raisins",
       category: 1,
-      name: "Radis",
-      price: 3.99,
-      unit: "kg",
-      image: "radis.png"
+      name: "Couque au raisins",
+      price: 0.85,
+      unit: "pièce",
+      image: "couqueauraisin.png"
     },
     {
-      ref: "legumes_4",
-      name: "Tomato",
+      ref: "Croissants",
+      name: "Croissant",
       category: 1,
-      price: 3.99,
-      unit: "kg",
-      image: "tomato.png"
+      price: 0.75,
+      unit: "pièce",
+      image: "croissant.jpg"
     },
     {
-      ref: "legumes_5",
-      name: "Brocolis",
+      ref: "pain au chocolat",
+      name: "Pain au chocolat",
       category: 1,
-      price: 3.99,
-      unit: "kg",
-      image: "brocoli.png"
+      price: 0.80,
+      unit: "pièce",
+      image: "pain au chocolat.jpg"
     },
     {
-      ref: "legumes_6",
-      name: "Aubergines",
+      ref: "Pistolet",
+      name: "Pistolet",
       category: 1,
-      price: 3.99,
-      unit: "kg",
-      image: "aubergine.png"
-    },
-    {
-      ref: "legumes_7",
-      name: "Carottes",
-      category: 1,
-      price: 2.99,
-      unit: "kg",
-      image: "carot.png"
-    },
-    {
-      ref: "legumes_8",
-      name: "Choux",
-      category: 1,
-      price: 1.99,
-      unit: "kg",
-      image: "chou.png"
+      price: 0.75,
+      unit: "pièce",
+      image: "pistolet.png"
     }
   ]; 
   
   const fresh = [
     {
-      ref: "fresh_1",
+      ref: "éclair",
       category: 2,
-      name: "Milk",
-      price: 2.99,
+      name: "éclair au chocolat",
+      price: 1.00,
       unit: "pièce",
-      image: "milk.png"
+      image: "eclair.jpg"
     },
     {
-      ref: "fresh_2",
+      ref: "merveilleux",
       category: 2,
-      name: "Beurre à tartiner",
-      price: 1.99,
+      name: "Merveilleux au chocolat",
+      price: 1.20,
       unit: "pièce",
-      image: "beurre.png"
+      image: "merveilleux.jpg"
     },
     {
-      ref: "fresh_3",
+      ref: "Muffins",
       category: 2,
-      name: "Oeufs",
-      price: 3.99,
-      unit: "les douzes",
-      image: "eggs.png"
+      name: "Muffin au chocolat",
+      price: 1.25,
+      unit: "pièce",
+      image: "muffins.jpg"
     },
     {
-      ref: "fresh_4",
+      ref: "tarte abricot",
       category: 2,
-      name: "Yaourts Nature",
-      price: 13.99,
+      name: "Tarte à l'abricot",
+      price: 7.99,
       unit: "pièce",
-      image: "yaourts_nature.png"
+      image: "tarte abricot.jpg"
     },
     {
-      ref: "fresh_5",
+      ref: "tarte cerise",
       category: 2,
-      name: "Yaourts Fruits",
-      price: 10.19,
+      name: "Tarte à la fraise",
+      price: 7.99,
       unit: "pièce",
-      image: "yaourts_fruits.png"
+      image: "tarte au fraise.jpg"
+    },
+    {
+      ref: "tarte cerise",
+      category: 2,
+      name: "Tarte à la cerise",
+      price: 7.99,
+      unit: "pièce",
+      image: "tarte au cerise.jpg"
     }
   ];  
   
   const epicerie = [
     {
-      ref: "epicerie_1",
+      ref: "sandwich1",
       category: 3,
-      name: "Thon",
-      price: 2.99,
-      unit: "pièce",
-      image: "thon.png"
-    },
-    {
-      ref: "epicerie_2",
-      category: 3,
-      name: "Sardines",
-      price: 1.99,
-      unit: "pièce",
-      image: "sardines.png"
-    },
-    {
-      ref: "epicerie_3",
-      category: 3,
-      name: "Cookies",
+      name: "Sandwich au thon",
       price: 3.99,
       unit: "pièce",
-      image: "cookies.png"
+      image: "sandwich au thon.jpg"
     },
     {
-      ref: "epicerie_4",
+      ref: "sandwich2",
       category: 3,
-      name: "Biscottes",
-      price: 5.99,
+      name: "Sandwich au bacon",
+      price: 3.99,
       unit: "pièce",
-      image: "biscottes.png"
+      image: "sandwich bacon.jpg"
     },
     {
-      ref: "epicerie_5",
+      ref: "sandwich3",
       category: 3,
-      name: "Thé",
-      price: 3.59,
+      name: "Sandwich Jambon Fromage",
+      price: 3.99,
       unit: "pièce",
-      image: "thé.png"
+      image: "sandwich jambon fromage.jpg"
     },
     {
-      ref: "epicerie_6",
+      ref: "sandwich4",
       category: 3,
-      name: "Soupes",
-      price: 3.59,
+      name: "Sandwich veggie",
+      price: 3.99,
       unit: "pièce",
-      image: "soupe.png"
+      image: "sandwich vege.jpg"
     },
     {
-      ref: "epicerie_7",
+      ref: "sandwich5",
       category: 3,
-      name: "Pâtes",
-      price: 3.59,
+      name: "Sandwich ardennais",
+      price: 3.99,
       unit: "pièce",
-      image: "pates.png"
+      image: "sanwdick roti.jpg"
     }
   ];
   
