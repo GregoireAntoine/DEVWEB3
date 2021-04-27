@@ -16,7 +16,7 @@ const fruits = [
       image: "baguette.jpg"
     },
     {
-      ref: "Pain de campagne ",
+      ref: "Paindecampagne",
       category: 0,
       name: "Pain de campagne",
       price: 1.35,
@@ -24,7 +24,7 @@ const fruits = [
       image: "Pain de campagne.jpg"
     },
     {
-      ref: "Pain tradition",
+      ref: "Paintradition",
       category: 0,
       name: "Pain tradtion",
       price: 3.99,
@@ -32,7 +32,7 @@ const fruits = [
       image: "pain tradition.jpg"
     },
     {
-      ref: "Pain gris",
+      ref: "Paingris",
       category: 0,
       name: "Pain Gris",
       price: 1.25,
@@ -40,7 +40,7 @@ const fruits = [
       image: "paingris.jpg"
     },
     {
-      ref: "pain blanc",
+      ref: "painblanc",
       category: 0,
       name: "Pain blanc",
       price: 1.00,
@@ -60,7 +60,7 @@ const fruits = [
       image: "brioche.png"
     },
     {
-      ref: "couque au choco",
+      ref: "couqueauchoco",
       category: 1,
       name: "Couque au chocolat",
       price: 0.90,
@@ -68,7 +68,7 @@ const fruits = [
       image: "couque au choco.png"
     },
     {
-      ref: "couque au raisins",
+      ref: "couqueauraisins",
       category: 1,
       name: "Couque au raisins",
       price: 0.85,
@@ -84,7 +84,7 @@ const fruits = [
       image: "croissant.jpg"
     },
     {
-      ref: "pain au chocolat",
+      ref: "painauchocolat",
       name: "Pain au chocolat",
       category: 1,
       price: 0.80,
@@ -127,7 +127,7 @@ const fruits = [
       image: "muffins.jpg"
     },
     {
-      ref: "tarte abricot",
+      ref: "tarteabricot",
       category: 2,
       name: "Tarte à l'abricot",
       price: 7.99,
@@ -135,7 +135,7 @@ const fruits = [
       image: "tarte abricot.jpg"
     },
     {
-      ref: "tarte cerise",
+      ref: "tartecerise",
       category: 2,
       name: "Tarte à la fraise",
       price: 7.99,
@@ -143,7 +143,7 @@ const fruits = [
       image: "tarte au fraise.jpg"
     },
     {
-      ref: "tarte cerise",
+      ref: "tartecerise",
       category: 2,
       name: "Tarte à la cerise",
       price: 7.99,
