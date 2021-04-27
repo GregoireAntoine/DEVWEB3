@@ -30,7 +30,7 @@ body {
   }
   
   .bg-light.orange {
-    background: #ffc107!important;
+    background: #e6bb6d!important;
   }
   
   /* cart */
@@ -137,6 +137,10 @@ body {
   }
   .checkout {
     margin-top: 5px;
+    color: white!important;
+  }
+  .disabled {
+    opacity: .65;
   }
   .coupon {
     color: green;
@@ -164,7 +168,7 @@ body {
     color: rgb(152, 151, 151);
   }
   .crimson {
-    color: crimson!important;
+    color: rgb(255, 255, 255)!important;
   }
   .bg-crimson {
     background-color: crimson!important;
