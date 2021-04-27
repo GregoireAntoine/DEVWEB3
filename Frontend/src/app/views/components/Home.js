@@ -2,7 +2,7 @@ import React from 'react'
 import { List } from  '../../components'
 
 const SideMenu = ({ loadCategory, category }) => {
-    const links = ["Fruits", "Légumes", "Produits Frais", "Epicerie", "Boissons"]
+    const links = ["Pains", "Viennoiseries", "Pâtisseries", "Sandwicherie"]
     return(
       <div className="col-sm-2 sidebar">
         <ul>
