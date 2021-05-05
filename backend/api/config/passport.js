@@ -1,5 +1,5 @@
 module.exports = function(passport, user) {
-    const bCrypt = require('bcrypt-nodejs');
+    const bCrypt = require("bcrypt-nodejs");
     const Users = user;
 
     passport.serializeUser(function(user, done) {
@@ -24,12 +24,12 @@ module.exports = function(passport, user) {
 
     });
 
-    const LocalStrategy = require('passport-local').Strategy;
+    const LocalStrategy = require("passport-local").Strategy;
 
-    passport.use('local-signup', new LocalStrategy(
+    passport.use("local-signup", new LocalStrategy(
         {
-            phoneField: 'phone',
-            passwordField: 'password',
+            phoneField: "phone",
+            passwordField: "password",
             passReqToCallback: true // allows us to pass back the entire request to the callback
         },
 
@@ -46,9 +46,9 @@ module.exports = function(passport, user) {
                 }
             }).then(function(user) {
                 if (user) {
-                    console.log('That phone is already taken');
+                    console.log("That phone is already taken");
                     return done(null, false, {
-                        message: 'That phone is already taken'
+                        message: "That phone is already taken"
                     });
                 }
                 else {
@@ -88,11 +88,11 @@ module.exports = function(passport, user) {
     ));
 
     //LOCAL SIGNIN
-    passport.use('local-signin', new LocalStrategy(
+    passport.use("local-signin", new LocalStrategy(
         {
             // by default, local strategy uses username and password, we will override with
-            phoneField: 'phone',
-            passwordField: 'password',
+            phoneField: "phone",
+            passwordField: "password",
             passReqToCallback: true // allows us to pass back the entire request to the callback
         },
 
@@ -105,7 +105,7 @@ module.exports = function(passport, user) {
 
                 return bCrypt.compareSync(password, userPassword);
 
-            }
+            };
 
             Users.findOne({
                 where: {
@@ -116,7 +116,7 @@ module.exports = function(passport, user) {
                 if (!user) {
 
                     return done(null, false, {
-                        message: 'phone does not exist'
+                        message: "phone does not exist"
                     });
 
                 }
@@ -124,7 +124,7 @@ module.exports = function(passport, user) {
                 if (!isValidPassword(user.password, password)) {
 
                     return done(null, false, {
-                        message: 'Incorrect password.'
+                        message: "Incorrect password."
                     });
 
                 }
@@ -139,7 +139,7 @@ module.exports = function(passport, user) {
                 console.log("Error:", err);
 
                 return done(null, false, {
-                    message: 'Something went wrong with your Signin'
+                    message: "Something went wrong with your Signin"
                 });
 
             });
