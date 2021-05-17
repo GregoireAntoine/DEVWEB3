@@ -61,14 +61,14 @@ export const Confirm = () => {
     return (
         <Fragment>
         <div class="jumbotron text-center">
-          <h1 class="display-3">Thank You!</h1>
+          <h1 class="display-3">Merci !</h1>
           <hr />
   
           <p class="lead">
-            <strong>Your order is on its way to your home</strong>
+            <strong>Votre commande est prise en compte.</strong>
             <br /> <br />
             <Link class="btn btn-primary btn-sm" to="/" onClick={() => reset()}>
-              Continue to homepage
+              retourner à la page d'acceuil
             </Link>
           </p>
           <br />
@@ -80,7 +80,7 @@ export const Confirm = () => {
             <li>{userProfile.zipCode}, {userProfile.city}</li>
         </ul>   }
         </div>
-        <SVGTruck />
+       
       </Fragment>
     );
 }
