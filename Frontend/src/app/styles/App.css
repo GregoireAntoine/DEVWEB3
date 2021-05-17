@@ -4,6 +4,9 @@ body {
   .container {
     margin-bottom: 100px;
   }
+i, li, .menu-right,a{
+    cursor:pointer;
+  }
   
   .card {
     margin-bottom: 40px;
