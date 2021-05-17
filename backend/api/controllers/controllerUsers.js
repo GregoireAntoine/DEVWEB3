@@ -7,7 +7,7 @@ exports.successConnection = function(req, res) {
     //res.render('successConnection');
     Users.findAll({
         attributes: [
-            'id',
+            "id",
         ],
         where: {
             id: req.user.id
@@ -18,24 +18,24 @@ exports.successConnection = function(req, res) {
 };
 
 exports.succesCreation = function(req, res){
-    res.json('successCreation');
+    res.json("successCreation");
 };
 
 exports.takenPhone = function(req, res){
-    res.status(400).json('takenPhone');
+    res.status(400).json("takenPhone");
 };
 
 exports.errorConnection = function(req, res){
-    res.status(400).json('phone/password incorrect');
+    res.status(400).json("phone/password incorrect");
 };
 
 exports.notConnected = function(req, res){
-    res.status(401).json('notConnected');
+    res.status(401).json("notConnected");
 };
 
 exports.logout = function(req, res) {
     req.session.destroy(function(err) {
-        res.json('endConnection');
+        res.json("endConnection");
     });
 
 };
