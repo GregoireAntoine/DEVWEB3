@@ -20,6 +20,9 @@ body {
     font-weight: 900;
      
   }
+  i, li, .menu-right,a{
+    cursor:pointer;
+  }
   .navbar-brand:hover {
      color: brown;
   }
