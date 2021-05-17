@@ -11,19 +11,28 @@ const SideMenu = ({ loadCategory, category }) => {
           })}
         </ul>
       </div>
+    
     )
   }
 
 export const Home = props => {
     const { isFiltering, filtered, list, category, loadCategory } = props
-    return( <div className="container">
-    <div className="row">
-      <SideMenu loadCategory={loadCategory} category={category}/>
-      <div className="col-sm">
-        <div className="row">
-           <List data={isFiltering ? filtered : list[category]} category={category} />
-        </div>
+    return( 
+      <div className="acceuil">
+        <div className="description"><p>
+          <h3>Description</h3>
+          Bienvenue sur le site web de la Boulangerie Patisserie François.<br></br>
+          Etant donné les condtitions sanitaires actuelle et au vu du succès de nos produits,<br></br> nous avons décidé de vous proposer une formule de réservation en ligne de vos produits
+          dans le but de désangorger la boutique.
+        </p></div>
+
+        <div className="expliquation"><p>
+        <h3>Expliquation</h3>
+        En cliquant sur le bouton ci dessous, vous pourrez avoir un aperçu de l'ensemble de nos produits.<br></br>
+        Ensuite, vous pourrez mettre dans votre panier les produits que vous désirez pour enfin les commander.
+        </p></div>
+
+        <button >Consulter les produits</button>
       </div>
-    </div>
-  </div>)
+    )
 }

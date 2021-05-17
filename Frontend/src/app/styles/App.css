@@ -23,6 +23,31 @@ i, li, .menu-right,a{
     font-weight: 900;
      
   }
+
+  .description, .expliquation{
+    padding:2em;
+    margin-bottom:1em;
+    margin-left:50%;
+    transform: translate(-50%);
+    text-align: center;
+    background-color: #dd971660;
+    border-radius: 2em;
+    color:white;
+    width:fit-content;
+    font-size: large;
+  }
+  .acceuil button{
+    margin-left:50%;
+    transform: translate(-50%);
+    border:none;
+    background:none;
+    margin-bottom:1rem;
+    color: #dd9002;
+    border-radius: 1em;
+    border: 1px solid white;
+    padding:10px
+  }
+  
   i, li, .menu-right,a{
     cursor:pointer;
   }
