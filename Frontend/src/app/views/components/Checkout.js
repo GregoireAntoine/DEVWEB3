@@ -91,7 +91,9 @@ export const Checkout = () => {
             <div className="row">
               <div className="col">
                 <input
-                  type="text"
+                  type="number"
+                  min="1000"
+                  max="9999"
                   className="form-control"
                   placeholder="Code Postal"
                   name="zipCode"

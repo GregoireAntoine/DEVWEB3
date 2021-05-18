@@ -30,7 +30,7 @@ i, li, .menu-right,a{
     margin-left:50%;
     transform: translate(-50%);
     text-align: center;
-    background-color: #dd971660;
+    background-color: #79551333;
     border-radius: 2em;
     color:white;
     width:fit-content;
@@ -47,7 +47,13 @@ i, li, .menu-right,a{
     border: 1px solid white;
     padding:10px
   }
-  
+  .boutondépart{
+    margin-left:50%;
+    transform: translate(-50%);
+    padding-bottom:1em;
+    margin-bottom:1em;
+    
+  }
   i, li, .menu-right,a{
     cursor:pointer;
   }

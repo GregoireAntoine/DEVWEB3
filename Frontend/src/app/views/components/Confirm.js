@@ -67,7 +67,7 @@ export const Confirm = () => {
           <p class="lead">
             <strong>Votre commande est prise en compte.</strong>
             <br /> <br />
-            <Link class="btn btn-primary btn-sm" to="/" onClick={() => reset()}>
+            <Link class="btn btn-primary btn-sm" to="/home" onClick={() => reset()}>
               retourner à la page d'acceuil
             </Link>
           </p>

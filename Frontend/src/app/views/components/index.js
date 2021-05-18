@@ -5,7 +5,9 @@ import {UserProfileContextProvider} from '../../lib/UserProfileContext'
 import { CartPage } from './Cart'
 import { Home } from './Home'
 import { Checkout } from './Checkout'
-import { Confirm, COnfirm } from './Confirm'
+import { Confirm } from './Confirm'
+import { Acceuil } from './Acceuil'
+
 import '../../styles/App.css'
 import { list } from '../../data'
 
@@ -36,7 +38,10 @@ const App = props => {
       <Navbar filter={filterResults} setFiltering={setFiltering} count={count}/>
       
           {/* Routes */}
-          <Route exact path="/" component={() => <Home 
+          
+          <Route exact path="/" component={() => <Acceuil/>
+                                                    }/>
+          <Route path="/home" component={() => <Home 
                                                       category={category} 
                                                       loadCategory={loadCategory}                              
                                                       list={list}
@@ -46,6 +51,8 @@ const App = props => {
           <Route path="/cart" component={CartPage}/>
           <Route path="/checkout" component={Checkout}/>
           <Route path="/confirm" component={Confirm}/>
+          <Route path="/acceuil" component={Acceuil}/>
+          
           </UserProfileContextProvider>
        </Router>
     </Fragment>
