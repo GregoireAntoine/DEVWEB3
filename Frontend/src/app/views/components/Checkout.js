@@ -35,7 +35,7 @@ export const Checkout = () => {
     return (
       <Fragment>
         <div className="col-sm-6 offset-3">
-          <h2>Checkout</h2>
+          <h2>Coordonnées</h2>
           <br />
           <form>
             <div className="row">
@@ -43,7 +43,7 @@ export const Checkout = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="First name"
+                  placeholder="Nom"
                   property=""
                   name="firstName"
                   defaultValue={firstName} 
@@ -53,7 +53,7 @@ export const Checkout = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Last name"
+                  placeholder="Prénom"
                   property=""
                   name="lastName"
                   defaultValue={lastName}
@@ -68,13 +68,13 @@ export const Checkout = () => {
                 type="email"
                 className="form-control"
                 id="exampleInputEmail1"
-                placeholder="Email address"
+                placeholder="Email"
                 property=""
                 name="email"
                 defaultValue={email}
                 onChange={e => setUserProfileContext({ [e.target.name]: e.target.value})}/>
               <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
+                La confidentialité de vos données nous est très précieuse.
               </small>
             </div>
             <div className="form-group">
@@ -82,7 +82,7 @@ export const Checkout = () => {
                 type="text"
                 className="form-control"
                 id="exampleInputEmail1"
-                placeholder="Address"
+                placeholder="Adresse"
                 property=""
                 name="address"
                 defaultValue={address} 
@@ -93,7 +93,7 @@ export const Checkout = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Postal Code"
+                  placeholder="Code Postal"
                   name="zipCode"
                   property=""
                   defaultValue={zipCode}
@@ -103,7 +103,7 @@ export const Checkout = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="City"
+                  placeholder="ville"
                   city="city"
                   property=""
                   defaultValue={city}
@@ -113,7 +113,7 @@ export const Checkout = () => {
             <br />
          
             <Link to="/confirm" className={`${ !isValid && 'disabled'} white btn btn-light btn-lg btn-block bg-crimson checkout `}>
-                Confirm
+                Valider
             </Link>
           </form>
         </div>
