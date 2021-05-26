@@ -5,7 +5,8 @@ const fruits = [
       name: "Baguette tradition",
       price: 1.35,
       unit: "pièce",
-      image: "baguette tradition.jpg"
+      image: "baguette tradition.jpg",
+      description:"Baguette Tradition à la farine 100% naturelle et au levain."
     },
     {
       ref: "baguette",
@@ -13,7 +14,8 @@ const fruits = [
       name: "Baguette",
       price: 1.05,
       unit: "pièce",
-      image: "baguette.jpg"
+      image: "baguette.jpg",
+      description:"Baguette blache"
     },
     {
       ref: "Paindecampagne",
@@ -21,15 +23,21 @@ const fruits = [
       name: "Pain de campagne",
       price: 1.35,
       unit: "pièce",
-      image: "pain de campagne.jpg"
+
+      image: "Pain de campagne.jpg",
+      description:"Pain fabriqué à partir de farine de blé belge."
+
+     
+
     },
     {
       ref: "Paintradition",
       category: 0,
       name: "Pain tradtion",
-      price: 3.99,
+      price: 1.29,
       unit: "pièce",
-      image: "pain tradition.jpg"
+      image: "pain tradition.jpg",
+      description:"Pain fait à partir de la même recette depuis 1848."
     },
     {
       ref: "Paingris",
@@ -37,7 +45,8 @@ const fruits = [
       name: "Pain Gris",
       price: 1.25,
       unit: "pièce",
-      image: "paingris.jpg"
+      image: "paingris.jpg",
+      description:"Pain fabriquer à partir de farine complète."
     },
     {
       ref: "painblanc",
@@ -45,7 +54,8 @@ const fruits = [
       name: "Pain blanc",
       price: 1.00,
       unit: "pièce",
-      image: "painblanc.jpg"
+      image: "painblanc.jpg",
+      description:"Pain fabriquer à partir de farine blanche. Moelleux et léger."
     }
     
   ];  
@@ -58,6 +68,7 @@ const fruits = [
       price: 0.85,
       unit: "pièce",
       image: "brioche.png"
+    
     },
     {
       ref: "couqueauchoco",
@@ -159,7 +170,8 @@ const fruits = [
       name: "Sandwich au thon",
       price: 3.99,
       unit: "pièce",
-      image: "sandwich au thon.jpg"
+      image: "sandwich au thon.jpg",
+      description:"Contient : Baguette blanche, tomates, salade, mayonnaise, thon."
     },
     {
       ref: "sandwich2",
@@ -167,7 +179,8 @@ const fruits = [
       name: "Sandwich au bacon",
       price: 3.99,
       unit: "pièce",
-      image: "sandwich bacon.jpg"
+      image: "sandwich bacon.jpg",
+      description:"Contient : jambon de dinde, bacon, mayonnaise, salade, tomates, oignions, baguette blanche."
     },
     {
       ref: "sandwich3",
@@ -175,7 +188,8 @@ const fruits = [
       name: "Sandwich Jambon Fromage",
       price: 3.99,
       unit: "pièce",
-      image: "sandwich jambon fromage.jpg"
+      image: "sandwich jambon fromage.jpg",
+      description:"Contient : jambon, Gouda, tomates, salades, mayonnaise."
     },
     {
       ref: "sandwich4",
@@ -183,7 +197,8 @@ const fruits = [
       name: "Sandwich veggie",
       price: 3.99,
       unit: "pièce",
-      image: "sandwich vege.jpg"
+      image: "sandwich vege.jpg",
+      description:"Contient : jambon végétarien, Gouda, tomates, salades, mayonnaise, concombres."
     },
     {
       ref: "sandwich5",
@@ -191,7 +206,8 @@ const fruits = [
       name: "Sandwich ardennais",
       price: 3.99,
       unit: "pièce",
-      image: "sanwdick roti.jpg"
+      image: "sanwdick roti.jpg",
+      description:"Contient : tranches de rosbeef, Gouda, tomates, salades, mayonnaise, concombre."
     }
   ];
   

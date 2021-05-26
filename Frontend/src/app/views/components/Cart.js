@@ -69,10 +69,10 @@ const Table = ({ items }) => {
     return (
       <table>
         <tr>
-          <th width="200">Product</th>
-          <th width="80">Reference</th>
-          <th width="150">Price</th>
-          <th width="150">Quantity</th>
+          <th width="200">Produit</th>
+          <th width="80">Référence</th>
+          <th width="150">Prix</th>
+          <th width="150">Quantité</th>
           <th width="200">Total</th>
         </tr>
         {items.map(item => {
@@ -86,7 +86,7 @@ export const CartPage = () => {
     const items = useSelector(state => state.items)
     const [subTotal, setSubTotal] = useState(0.00)
     const [total, setTotal] = useState(0.00)
-    const shipping = 10.00
+    const shipping = 0.00
 
     useEffect(() => {
       let totals = items.map(item => {
@@ -107,33 +107,27 @@ export const CartPage = () => {
 
           <div className="col-sm-3 order-summary">
             <ul className="list-group">
-              <li className="list-group-item">Order Summary</li>
+             
 
               <li className="list-group-item">
+              
+              <li className="list-group-item ">
                 <ul className="list-group flex">
-                  <li className="text-left">Subtotal</li>
-                  <li className="text-right">€{subTotal.toFixed(2)}</li>
+                  <li className="text-left">Valeur Commande</li>
+                    <li className="text-right">€{subTotal == 0.00 ? "0.00" : total.toFixed(2)}</li>
                 </ul>
-                <ul className="list-group flex">
-                  <li className="text-left">shipping</li>
-                  <li className="text-right">€{shipping.toFixed(2)}</li>
-                </ul>
+              </li>
                 <ul className="list-group flex">
                   <li className="coupon crimson">
-                    <small> >> Add Coupon Code</small>
+                    <small> Ajouter code promo</small>
                   </li>
                 </ul>
               </li>
 
-              <li className="list-group-item ">
-                <ul className="list-group flex">
-                  <li className="text-left">Total</li>
-                    <li className="text-right">€{subTotal == 0.00 ? "0.00" : total.toFixed(2)}</li>
-                </ul>
-              </li>
+              
             </ul>
               <Link to="checkout" className={`white btn btn-light btn-lg btn-block checkout ${!items.length && 'disabled'} bg-crimson`}>
-                Checkout
+                Valider
               </Link>
           </div>
         </div>

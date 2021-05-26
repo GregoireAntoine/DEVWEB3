@@ -8,6 +8,7 @@ export const Navbar = ({ filter, setFiltering  }) => {
   return (
     <nav className="navbar orange navbar-expand-lg navbar-light bg-light fixed-top">
         <Link  className="navbar-brand crimson" to="/">   <i class="fas fa-shopping-cart"></i>     Boulangerie Patisserie François</Link>
+
       <button
         className="navbar-toggler"
         type="button"
@@ -27,7 +28,7 @@ export const Navbar = ({ filter, setFiltering  }) => {
               <input
                 className="form-control mr-sm-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Rechercher"
                 aria-label="Search"
                 onChange={(e) => {
                   setFiltering(e.target.value.length > 0)
@@ -78,7 +79,7 @@ export const Card = props => {
               <p>
                   €{item.price}/{item.unit}
               </p>
-              <button className="btn btn-warning btn-sm" data-toggle="modal" data-target={`#${item.ref}`}>view product</button>
+              <button className="btn btn-warning btn-sm" data-toggle="modal" data-target={`#${item.ref}`}>Voir produit</button>
             </div>
           </div>
         </div>
@@ -134,8 +135,7 @@ export const Modal = ({ item }) => {
 
               <div className="col-sm">
                 <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
+                {item.description}
                 </p>
                   <h3 className="price">€{item.price}/{item.unit}</h3> <br />
                 <div
@@ -167,15 +167,14 @@ export const Modal = ({ item }) => {
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal">
-              Close
+              Fermer
             </button>
             <button
               type="button"
               class="btn btn-success"
               data-dismiss="modal"
               onClick={()=> add(item, qty)}
-            >
-              Add to Cart
+            > Ajoutez au panier
             </button>
           </div>
         </div>
