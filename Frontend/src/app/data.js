@@ -2,7 +2,7 @@ const fruits = [
     {
       ref: "Pain_1",
       category: 0,
-      name: "Baguette traditions",
+      name: "Baguette tradition",
       price: 1.35,
       unit: "pièce",
       image: "baguette tradition.jpg",
