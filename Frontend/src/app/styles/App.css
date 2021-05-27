@@ -47,7 +47,7 @@ i, li, .menu-right,a{
     border: 1px solid white;
     padding:10px
   }
-  .boutondépart{
+  .startButton{
     margin-left:50%;
     transform: translate(-50%);
     padding-bottom:1em;

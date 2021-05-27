@@ -24,7 +24,7 @@ const fruits = [
       price: 1.35,
       unit: "pièce",
 
-      image: "Pain de campagne.jpg",
+      image: "pain de campagne.jpg",
       description:"Pain fabriqué à partir de farine de blé belge."
 
      

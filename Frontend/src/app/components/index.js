@@ -8,7 +8,7 @@ export const Navbar = ({ filter, setFiltering  }) => {
   return (
     <nav className="navbar orange navbar-expand-lg navbar-light bg-light fixed-top">
 
-        <Link  className="navbar-brand crimson" to="/home">   <i class="fas fa-shopping-cart"></i>     Boulangerie Patisserie François</Link>
+        <Link  className="navbar-brand crimson" to="/"><i class="fas fa-shopping-cart"></i>Boulangerie Patisserie François</Link>
 
 
       <button
@@ -81,7 +81,7 @@ export const Card = props => {
               <p>
                   €{item.price}/{item.unit}
               </p>
-              <button className="btn btn-warning btn-sm" data-toggle="modal" data-target={`#${item.ref}`}>Voir produit</button>
+              <button className="btn btn-warning btn-sm" data-toggle="modal" data-target={`#${item.ref}`}>Voir produits</button>
             </div>
           </div>
         </div>
