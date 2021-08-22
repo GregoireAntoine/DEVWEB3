@@ -2,7 +2,7 @@
 import React from 'react'
 import { List } from  '../../components'
 import { Link } from "react-router-dom";
-
+import  * as list from '../../data.js';
 const SideMenu = ({ loadCategory, category }) => {
     const links = ["Pains", "Viennoiseries", "Pâtisseries", "Sandwicherie"]
     return(
@@ -20,21 +20,21 @@ const SideMenu = ({ loadCategory, category }) => {
 
   
 export const Acceuil = props => {
-
+     console.log(list)
     return( 
      
       <div className="acceuil">
          <div className="produits"><p>
           <h3><center>Nos produits phares</center></h3>
           <table>
-            <tr><td>baguette</td><td>Merveilleux au chocolat</td><td>Tarte à la fraise</td><td>Brioche au chocolat</td></tr>
+            <tr><td>Baguette</td><td>Merveilleux au chocolat</td><td>Tarte à la fraise</td><td>Brioche au chocolat</td></tr>
             <tr><td>item.image</td><td>item.image</td><td>item.image</td><td>item.image</td></tr>
           </table>
           
         </p>
         </div>
         <div className="heure">
-        <h3>Nos Heures d'ouvertures</h3>
+        <h3 className="heureTitre"><center>Nos Heures d'ouvertures</center></h3>
          <table>
           <tr><td>Lundi</td><td>Fermé</td></tr>
           <tr><td>mardi</td><td>7:00 - 17h30</td></tr>

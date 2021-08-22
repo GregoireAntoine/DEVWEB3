@@ -235,3 +235,26 @@ i, li, .menu-right,a{
     font-size:1.5em;
     
   }
+  .produits table{
+    margin-top: 2rem;
+  }
+  .produits table td {
+    border: 1px solid rgba(51, 51, 51, 0.048);
+    text-align: center;
+    font-weight: 700;
+  }
+  .heure table, .heureTitre{
+    margin-top: 3em;
+  }
+  .heure table{
+    margin-bottom: 3rem;
+    width:70%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .heure table td {
+    border: 1px solid rgba(51, 51, 51, 0.048);
+    height: 3rem;
+    text-align: center;
+    font-weight: 700;
+  }
