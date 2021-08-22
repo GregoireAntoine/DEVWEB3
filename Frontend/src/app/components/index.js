@@ -9,7 +9,9 @@ export const Navbar = ({ filter, setFiltering  }) => {
     <nav className="navbar orange navbar-expand-lg navbar-light bg-light fixed-top">
 
         <Link  className="navbar-brand crimson" to="/home">   <i class="fas fa-shopping-cart"></i>     Boulangerie Patisserie François</Link>
-
+        <Link class="navbar-acceuil" to="/Acceuil" >
+                Acceuil
+            </Link>
 
       <button
         className="navbar-toggler"
