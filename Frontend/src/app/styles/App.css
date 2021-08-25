@@ -258,3 +258,9 @@ i, li, .menu-right,a{
     text-align: center;
     font-weight: 700;
   }
+
+  .produits img {
+    height :7rem;
+    width : 10rem;
+    margin-top: 1rem;;
+  }

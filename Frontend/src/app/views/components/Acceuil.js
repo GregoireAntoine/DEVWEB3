@@ -3,6 +3,8 @@ import React from 'react'
 import { List } from  '../../components'
 import { Link } from "react-router-dom";
 import  * as list from '../../data.js';
+
+
 const SideMenu = ({ loadCategory, category }) => {
     const links = ["Pains", "Viennoiseries", "Pâtisseries", "Sandwicherie"]
     return(
@@ -28,7 +30,7 @@ export const Acceuil = props => {
           <h3><center>Nos produits phares</center></h3>
           <table>
             <tr><td>Baguette</td><td>Merveilleux au chocolat</td><td>Tarte à la fraise</td><td>Brioche au chocolat</td></tr>
-            <tr><td>item.image</td><td>item.image</td><td>item.image</td><td>item.image</td></tr>
+            <tr><td><img src={require('./baguette.jpg')} /></td><td><img src={require('./merveilleux.jpg')} /></td><td><img src={require('./tarte au fraise.jpg')} /></td><td><img src={require('./brioche.png')} /></td></tr>
           </table>
           
         </p>
