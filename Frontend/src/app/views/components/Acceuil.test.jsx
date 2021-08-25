@@ -3,25 +3,25 @@ test ('dd', function(){
 })
 
 
-test('displays content after click', function () {
+test('verif class col-sm-2 sidebar', function () {
 
     document.body.innerHTML = `<div className="col-sm-2 sidebar">`
-    const spoilerButton = document.getElementsByClassName('col-sm-2 sidebar')
-    expect(spoilerButton).not.toBeNull() 
+    const verif = document.getElementsByClassName('col-sm-2 sidebar')
+    expect(verif).not.toBeNull() 
   })
 
-  test('displays content after click', function () {
+  test('verif class acceuil', function () {
 
     document.body.innerHTML = `<div className="acceuil">`
-    const spoilerButton = document.getElementsByClassName('acceuil')
-    expect(spoilerButton).not.toBeNull() 
+    const verif = document.getElementsByClassName('acceuil')
+    expect(verif).not.toBeNull() 
   })
 
-  test('displays content after click', function () {
+  test('verif class descirption', function () {
 
     document.body.innerHTML = `<div className="description">`
-    const spoilerButton = document.getElementsByClassName('description')
-    expect(spoilerButton).not.toBeNull() 
+    const verif = document.getElementsByClassName('description')
+    expect(verif).not.toBeNull() 
   })
 
  
