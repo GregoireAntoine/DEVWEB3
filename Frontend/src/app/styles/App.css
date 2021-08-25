@@ -30,9 +30,10 @@ i, li, .menu-right,a{
     margin-left:50%;
     transform: translate(-50%);
     text-align: center;
-    background-color: #79551333;
+    font-weight: 600;
+    background-color: #ffffff33;
     border-radius: 2em;
-    color:white;
+    color:rgb(197, 183, 56);
     width:fit-content;
     font-size: large;
   }
