@@ -28,6 +28,11 @@ CREATE TABLE `products` (
   `status` ENUM ('out_of_stock', 'in_stock', 'running_low')
 );
 
+CREATE TABLE `ProdPhares` (
+  `name` varchar(255),
+  `photos` image
+);
+
 CREATE TABLE `merchant_periods` (
   `id` int PRIMARY KEY,
   `merchant_id` int,
