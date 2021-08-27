@@ -9,6 +9,8 @@ router.get('/takenPhone', ctrUsers.takenPhone);
 router.get('/errorConnection', ctrUsers.errorConnection);
 router.get('/notConnected', ctrUsers.notConnected);
 router.get('/logout',isLoggedIn, ctrUsers.logout);
+router.get('/signup', ctrUsers.signup);
+router.get('/signin', ctrUsers.signin);
 router.post('/signup', passport.authenticate('local-signup', {
     successRedirect: '/users/successCreation',
     failureRedirect: '/users/takenPhone'

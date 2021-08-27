@@ -52,3 +52,14 @@ exports.deleteOne = function(req, res) {
         .catch(error => res.status(400).send("Error while deleting an account : ", error));
 };
 
+exports.signup = function(req, res) {
+
+    res.json('signup');
+
+}
+
+exports.signin = function(req, res) {
+
+    res.json('signin');
+
+}
